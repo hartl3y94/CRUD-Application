@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>
+        CRUD App
+    </title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <h1>
+        <center>CRUD Application</center>
+    </h1>
+    <hr>
+    <div class="employee-form">
+        <form onsubmit="event.preventDefault();onFormSubmit();" autocomplete="off">
+            <div>
+                <label><strong>Full Name</strong></label><label class="validation-error hide" id="fullNameValidationError">Required Field</label>
+                <input type="text" name="fullName" id="fullName">
+            </div>
+            <div>
+                <label><strong>Email</strong></label>
+                <input type="text" name="email" id="email">
+            </div>
+            <div>
+                <label><strong>Salary</strong></label>
+                <input type="text" name="salary" id="salary">
+            </div>
+            <div>
+                <label><strong>Country</strong></label>
+                <input type="text" name="city" id="city">
+            </div>
+            <div class="form-action-buttons">
+                <input type="submit" value="Submit">
+            </div>
+        </form>
+    </div>
+    <br />
+    <div class="employees-table">
+        <table class="list" id="employeeList">
+            <thead>
+                <tr>
+                    <th>Full Name</th>
+                    <th>Email</th>
+                    <th>Salary</th>
+                    <th>Country</th>
+                    <th>Actions</th>
+                </tr>
+            </thead>
+            <tbody>
+
+            </tbody>
+        </table>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
